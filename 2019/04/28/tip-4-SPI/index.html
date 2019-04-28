@@ -96,19 +96,17 @@
 
 
 
-  <meta name="description" content="概述定义：&amp;emsp;&amp;emsp;有序的元素序列，用于存储多个相同类型数据数据的集合。如下图： 主要特性： 类型相同 有序 能通过下标访问  在java中数组一经初始化，他的大小是固定的。为此java提供了一些集合框架来支持动态数组的操作，比如ArrayList。 扩展多维数组：由低维数组组合而成。 练习从LeetCode中选取了几道比较有代表性的题目在这边做总结。所有题目链接：数组简介 至少是其">
+  <meta name="description" content="SPI—Service Provider Interfaces 什么是JAVA SPI?  &amp;nbsp;&amp;nbsp;SPI全称 Service Provider Interfaces &amp;nbsp;&amp;nbsp;Java SPI定义了四个主要组件：  Service 服务  &amp;nbsp;&amp;nbsp;一系列接口或类提供明确的功能来给外部的访问和调用  Service Provider Interface">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数据结构---数组">
-<meta property="og:url" content="http://yoursite.com/2019/04/02/Data_structure/index.html">
+<meta property="og:title" content="tip-4-SPI">
+<meta property="og:url" content="http://yoursite.com/2019/04/28/tip-4-SPI/index.html">
 <meta property="og:site_name" content="day day up">
-<meta property="og:description" content="概述定义：&amp;emsp;&amp;emsp;有序的元素序列，用于存储多个相同类型数据数据的集合。如下图： 主要特性： 类型相同 有序 能通过下标访问  在java中数组一经初始化，他的大小是固定的。为此java提供了一些集合框架来支持动态数组的操作，比如ArrayList。 扩展多维数组：由低维数组组合而成。 练习从LeetCode中选取了几道比较有代表性的题目在这边做总结。所有题目链接：数组简介 至少是其">
+<meta property="og:description" content="SPI—Service Provider Interfaces 什么是JAVA SPI?  &amp;nbsp;&amp;nbsp;SPI全称 Service Provider Interfaces &amp;nbsp;&amp;nbsp;Java SPI定义了四个主要组件：  Service 服务  &amp;nbsp;&amp;nbsp;一系列接口或类提供明确的功能来给外部的访问和调用  Service Provider Interface">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/04/02/Data_structure/array.png">
-<meta property="og:updated_time" content="2019-04-02T12:41:49.778Z">
+<meta property="og:updated_time" content="2019-04-28T13:16:21.623Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="数据结构---数组">
-<meta name="twitter:description" content="概述定义：&amp;emsp;&amp;emsp;有序的元素序列，用于存储多个相同类型数据数据的集合。如下图： 主要特性： 类型相同 有序 能通过下标访问  在java中数组一经初始化，他的大小是固定的。为此java提供了一些集合框架来支持动态数组的操作，比如ArrayList。 扩展多维数组：由低维数组组合而成。 练习从LeetCode中选取了几道比较有代表性的题目在这边做总结。所有题目链接：数组简介 至少是其">
-<meta name="twitter:image" content="http://yoursite.com/2019/04/02/Data_structure/array.png">
+<meta name="twitter:title" content="tip-4-SPI">
+<meta name="twitter:description" content="SPI—Service Provider Interfaces 什么是JAVA SPI?  &amp;nbsp;&amp;nbsp;SPI全称 Service Provider Interfaces &amp;nbsp;&amp;nbsp;Java SPI定义了四个主要组件：  Service 服务  &amp;nbsp;&amp;nbsp;一系列接口或类提供明确的功能来给外部的访问和调用  Service Provider Interface">
 
 
 
@@ -116,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/04/02/Data_structure/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/28/tip-4-SPI/">
 
 
 
@@ -126,7 +124,7 @@
   };
 </script>
 
-  <title>数据结构---数组 | day day up</title>
+  <title>tip-4-SPI | day day up</title>
   
 
 
@@ -325,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/02/Data_structure/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/28/tip-4-SPI/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="徐志滇">
@@ -342,7 +340,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">数据结构---数组
+          <h1 class="post-title" itemprop="name headline">tip-4-SPI
 
               
             
@@ -368,7 +366,7 @@
                 
               
 
-              <time title="创建时间：2019-04-02 17:39:43 / 修改时间：20:41:49" itemprop="dateCreated datePublished" datetime="2019-04-02T17:39:43+08:00">2019-04-02</time>
+              <time title="创建时间：2019-04-28 19:27:23 / 修改时间：21:16:21" itemprop="dateCreated datePublished" datetime="2019-04-28T19:27:23+08:00">2019-04-28</time>
             
 
             
@@ -378,24 +376,6 @@
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据结构/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -409,8 +389,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/02/Data_structure/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/02/Data_structure/" itemprop="commentCount"></span>
+                <a href="/2019/04/28/tip-4-SPI/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/28/tip-4-SPI/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -445,93 +425,56 @@
       
 
       
-        <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h3 id="定义："><a href="#定义：" class="headerlink" title="定义："></a>定义：</h3><p>&emsp;&emsp;<strong>有序</strong>的元素序列，用于存储多个<strong>相同类型数据</strong>数据的集合。如下图：<br><img src="/2019/04/02/Data_structure/array.png" alt></p>
-<h3 id="主要特性："><a href="#主要特性：" class="headerlink" title="主要特性："></a>主要特性：</h3><ul>
-<li>类型相同</li>
-<li>有序</li>
-<li>能通过下标访问</li>
+        <h1 id="SPI—Service-Provider-Interfaces"><a href="#SPI—Service-Provider-Interfaces" class="headerlink" title="SPI—Service Provider Interfaces"></a><center>SPI—Service Provider Interfaces</center></h1><ul>
+<li>什么是JAVA SPI?</li>
 </ul>
-<p>在java中数组一经初始化，他的大小是固定的。为此java提供了一些集合框架来支持动态数组的操作，比如ArrayList。</p>
-<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><p>多维数组：由低维数组组合而成。</p>
-<h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h2><p>从LeetCode中选取了几道比较有代表性的题目在这边做总结。所有题目链接：<a href="https://leetcode-cn.com/explore/learn/card/array-and-string/198/introduction-to-array/771/" target="_blank" rel="noopener">数组简介</a></p>
-<h3 id="至少是其他数字两倍的最大数"><a href="#至少是其他数字两倍的最大数" class="headerlink" title="至少是其他数字两倍的最大数"></a>至少是其他数字两倍的最大数</h3><p>思路：使用数组的有序性。将数据进行排序，但又不需要全部排序完成，只需要找出最大和第二大的数，所以用不完全的冒泡排序，进行2次冒泡找出最大以及第二大的进行比较，再冒泡的同时记录最大值的索引。最后返回结果值。以下为实现代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public int dominantIndex( int[] nums ) &#123;</span><br><span class="line">        if (nums.length &lt; 2) &#123;</span><br><span class="line">            return 0;</span><br><span class="line">        &#125;</span><br><span class="line">        Stack&lt; Integer &gt; stack = new Stack&lt;&gt;();</span><br><span class="line">        for (int i = 0; i &lt; 2; i++) &#123;</span><br><span class="line">            for (int j = 0; j &lt; nums.length - 1 - i; j++) &#123;</span><br><span class="line">                int num = nums[j];</span><br><span class="line">                int num1 = nums[j + 1];</span><br><span class="line">                if (num &gt; num1) &#123;</span><br><span class="line">                    swap(j, nums);</span><br><span class="line">                &#125; else &#123;</span><br><span class="line">                    if (i == 0) &#123;</span><br><span class="line">                        stack.push(j + 1);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        if (nums[nums.length - 1]  &gt;= nums[nums.length - 2]* 2) &#123;</span><br><span class="line">            return stack.isEmpty() ? 0 : stack.pop();</span><br><span class="line">        &#125;</span><br><span class="line">        return -1;</span><br><span class="line">    &#125;</span><br><span class="line">    private void swap( int j, int[] nums ) &#123;</span><br><span class="line">        int max = nums[j];</span><br><span class="line">        nums[j] = nums[j + 1];</span><br><span class="line">        nums[j + 1] = max;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="对角线遍历"><a href="#对角线遍历" class="headerlink" title="对角线遍历"></a>对角线遍历</h3><p>思路：根据规律发现，有2种移动方式，右上和左下。</p>
-<p>右上</p>
+<p>&nbsp;&nbsp;SPI全称 <strong>Service Provider Interfaces</strong></p>
+<p>&nbsp;&nbsp;Java SPI定义了四个主要组件：</p>
+<ol>
+<li>Service 服务</li>
+</ol>
+<p>&nbsp;&nbsp;<strong>一系列接口或类</strong>提供明确的功能来给外部的访问和调用</p>
+<ol start="2">
+<li>Service Provider Interface 服务提供接口</li>
+</ol>
+<p>&nbsp;&nbsp;做为服务的代理或者对外发布的服务的<strong>一个接口或抽象类</strong>。服务和SPI共同组成了JAVA生态圈的API。</p>
+<p>&nbsp;&nbsp;<a href="https://stackoverflow.com/questions/2954372/difference-between-spi-and-api" target="_blank" rel="noopener">SPI和API的区别</a>：</p>
+<p>API:给其他服务调用的接口。</p>
+<p>SPI:定义了接口的功能，给服务实现者去实现具体接口功能的接口。</p>
+<ol start="3">
+<li>Service Provider 服务提供</li>
+</ol>
+<p>&nbsp;&nbsp;SPI的具体实现者。通过resouce文件夹下META-INF/services下配置。用对应SPI的全类名路径作为文件名，文件内容则是SPI的具体实现的全类名路径。</p>
+<p>&nbsp;&nbsp;可以将服务提者以jar文件的形式放在应用的classpath下，java 扩展类路径下，或者我们自定义的类路径中。</p>
+<ol start="4">
+<li>ServiceLoader 服务加载</li>
+</ol>
+<p>&nbsp;&nbsp;SPI的核心就是ServiceLoader。用于将服务提供者加载到内存中来。</p>
 <ul>
-<li>先将节点右移。若无法右移则下移一个节点，下移后改变方向往左下移动。</li>
-<li>若右移成功，再将节点上移。若无法上移则改变方向，则直接改变移动方向。</li>
-<li>若上移成功，则继续右上步骤直到改变方向。</li>
+<li>SPI有什么用？</li>
 </ul>
-<p>左下</p>
+<p>discovering and loading implementations matching a given interface</p>
+<p>发现和加载符合给定接口的实现。</p>
 <ul>
-<li>先将节点下移。若节点无法下移，则将节点右移，然后更换方向。</li>
-<li>下移成功后，将节点左移。若左移不成功，则直接更换方向</li>
-<li>若左移成功，继续左下移动，直到改变方向。</li>
+<li><a href="https://www.baeldung.com/java-spi" target="_blank" rel="noopener">JAVA SPI怎么使用</a>？</li>
 </ul>
-<p>以下为实现代码：</p>
-<pre><code>class Solution {
-    public int[] findDiagonalOrder( int[][] matrix ) {
-        if (matrix.length == 0) {
-            return new int[0];
-        }
-        if (matrix.length == 1) {
-            return matrix[0];
-        }
-        int rows = matrix.length - 1;
-        int cols = matrix[0].length - 1;
-        int[] result = new int[matrix[0].length * matrix.length];
-        int rowCur = 0;
-        int colCur = 0;
-        int direct = 1;
-        int index = 0;
-        while (!(rowCur == rows &amp;&amp; colCur == cols)) {
-            result[index] = matrix[rowCur][colCur];
-            index++;
-            if (direct == 1) {
-                // 向右上遍历
-                if (colCur == cols) {
-                    // 没有右节点，则取下节点
-                    rowCur = rowCur + 1;
-                    direct = 0;
-                    continue;
-                }
-                // 右右节点
-                colCur = colCur + 1;
-                if (rowCur == 0) {
-                    // 没有上节点,直接取右节点,改变方向
-                    direct = 0;
-                    continue;
-                }
-                // 有上节点
-                rowCur = rowCur - 1;
-                continue;
-            }
+<ol>
+<li>定义我们的服务提供者接口，他提供了一个功能。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public interface SpiProviderInterface &#123;</span><br><span class="line">	String fun( );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2.ServiceLoader（核心）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public class MyLoader &#123;</span><br><span class="line"> </span><br><span class="line">    static ServiceLoader&lt;ExchangeRateProvider&gt; loader = ServiceLoader</span><br><span class="line">      .load(ExchangeRateProvider.class);</span><br><span class="line">  </span><br><span class="line">    public static  Iterator&lt;ExchangeRateProvider&gt; providers(boolean refresh) &#123;</span><br><span class="line">        if (refresh) &#123;</span><br><span class="line">            loader.reload();</span><br><span class="line">        &#125;</span><br><span class="line">        return loader.iterator();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>3.服务提供者</p>
+<ul>
+<li>创建我们的服务提供者</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public class MyProvider </span><br><span class="line">  implements SpiProviderInterface &#123;</span><br><span class="line">  </span><br><span class="line">    @Override</span><br><span class="line">    public String fun( ); &#123;</span><br><span class="line">        return &quot;myFun&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>进行标识没让ServiceLoader扫描到</li>
+</ul>
+<p>在META-INF/services/下创建xxx.SpiProviderInterface文件，内容为XXX.MyProvider</p>
+<p>我们可以提供多个jar包的形式来实现我们的SPI，然后在调用MyLoader.providers方法时，会将所有实现进行加载和返回。以达到动态扩展的目的</p>
 
-            if (direct == 0) {
-                // 向左下遍历
-                if (rowCur == rows) {
-                    // 没有下节点，直接走右节点，且更换方向
-                    colCur = colCur + 1;
-                    direct = 1;
-                    continue;
-                }
-                // 有下节点
-                rowCur = rowCur + 1;
-                if (colCur == 0) {
-                    // 没有左节点，变方向
-                    direct = 1;
-                    continue;
-                }
-                colCur = colCur - 1;
-                continue;
-            }
-        }
-        result[result.length-1] = matrix[rows][cols];
-        return result;
-    }
-}
-</code></pre>
       
     </div>
 
@@ -561,15 +504,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/04/15/双指针技巧/" rel="next" title="双指针技巧">
+                <i class="fa fa-chevron-left"></i> 双指针技巧
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/03/Tutorials-Concurrency1/" rel="prev" title="The Java™ Tutorials Tutorials--Concurrency(1)">
-                The Java™ Tutorials Tutorials--Concurrency(1) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -703,7 +646,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义："><span class="nav-number">1.1.</span> <span class="nav-text">定义：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要特性："><span class="nav-number">1.2.</span> <span class="nav-text">主要特性：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#扩展"><span class="nav-number">1.3.</span> <span class="nav-text">扩展</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#练习"><span class="nav-number">2.</span> <span class="nav-text">练习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#至少是其他数字两倍的最大数"><span class="nav-number">2.1.</span> <span class="nav-text">至少是其他数字两倍的最大数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对角线遍历"><span class="nav-number">2.2.</span> <span class="nav-text">对角线遍历</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SPI—Service-Provider-Interfaces"><span class="nav-number">1.</span> <span class="nav-text">SPI—Service Provider Interfaces</span></a></li></ol></div>
             
 
           </div>
